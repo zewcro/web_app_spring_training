@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class TodoListController {
     ArrayList<Todo> ListToDo = new ArrayList<>();
-    @GetMapping(value="/api/Todo")
+    @GetMapping(value="/api/todo")
     public ArrayList<Todo> getList(){
         return ListToDo;
     }
